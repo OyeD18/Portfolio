@@ -38,28 +38,26 @@
         align-items: center;
         justify-content: center;
         position: relative;
+        flex-direction: column; /* Ensure the name and title are stacked vertically */
       }
 
       .Kalnia {
         font-family: 'Kalnia', serif;
         font-size: 12em;
         font-weight: 700;
-        margin: 10px 0;
+        margin: 0; /* Remove margin */
         color: #8554D4;
         position: relative;
+        text-align: center; /* Center the title */
       }
 
       .name-vertical {
-        position: absolute;
-        left: 155px;
-        top: 202px;  
-        transform: rotate(-90deg);
-        transform-origin: left top;
-        font-size: 1em;
-        font-weight: 0;
+        font-size: 1.5em; /* Set appropriate font size */
         font-family: 'KoHo', sans-serif;
         color: #FFFFFF;
-        white-space: nowrap;
+        text-align: center; /* Center the name text */
+        margin-top: 20px;
+        
       }
 
       .subtitle {
@@ -76,7 +74,7 @@
       .subtitle li {
         margin: 0 85px;
       }
-      
+
       #nav {
         clear: both;
         padding: 0;
@@ -239,8 +237,8 @@
         </div>
       <div id="header">
         <div class="header-content">
+          <div class="name-vertical">Oyeolapo Ajiboye's</div>
           <h1 class="Kalnia">PORT<br>FOLIO</h1>
-          <span class="name-vertical">Oyeolapo Ajiboye</span>
         </div>
         <ul class="subtitle">
           <li>Graphic Designer</li>
