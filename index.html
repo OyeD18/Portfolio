@@ -2,80 +2,111 @@
 <html lang="en-CA">
   <head>
     <meta charset="utf-8">
-    <title>The Gallery</title>
+    <title>Portfolio</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Italianno&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@400;700&family=KoHo:wght@300;400&display=swap" rel="stylesheet">
     <style>
       body {
-        color: #000000;
-        background-color: #FDC56A;
+        color: #FFFFFF;
+        background-color: #8554D4;
         background-position: center;
         margin: 0px;
-        font-family: 'Indie Flower', cursive;
+        font-family: 'KoHo', sans-serif;
         text-align: center;
       }
+      
       .wrapper {
-        background-color: #FFF4E3;
+        background-color: #000000;
         width: 92%;
         max-width: 1200px;
         margin: 20px auto;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        min-height: 2200px;
       }
 
       #header {
         height: auto;
-        background-color: #FFF4E3;
+        background-color: #000000;
+        position: relative;
+        padding: 20px 0;
       }
 
-      h1 {
+      .Kalnia {
+        font-family: 'Kalnia', serif;
+        font-size: 12em;
+        font-weight: 700;
         margin: 10px 0;
+        color: #8554D4;
+        position: relative;
       }
-
-      .italianno {
-        font-family: 'Italianno', cursive;
-        font-size: 8em;
-        font-weight: 300;
-        margin: 0;
+      
+      .name-vertical {
+        position: absolute;
+        left: 150px;
+        top: 222px;
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        font-size: 1em;
+        font-weight: 0;
+        font-family: 'KoHo', sans-serif;
+        color: #FFFFFF;
+        white-space: nowrap;
+      }
+      
+      .subtitle {
+        font-size: 1.5em;
+        font-weight: 0;
+        margin-top: 50px;
+        font-family: 'KoHo', sans-serif;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+      }
+      
+      .subtitle li {
+        margin: 0 85px;
       }
       
       #nav {
         clear: both;
-        padding: 46.5 0;
-        margin-top: 46.5px;
+        padding: 0;
+        margin-bottom: 100px;
       }
 
       #nav ul {
-        border-top: 2px solid #000;
-        border-bottom: 2px solid #000;
+        border-top: 2px solid #FFFFFF;
+        border-bottom: 2px solid #FFFFFF;
         list-style: none;
-        margin: 0;
+        margin: 10;
         padding: 0;
         display: flex;
         justify-content: center;
-        background-color: #FFFFFF;
+        background-color: #000000;
       }
 
       #nav li {
-        margin: 0 20px;
+        margin: 0 10px;
       }
 
       #nav a {
         text-decoration: none;
-        color: #000000;
+        color: #FFFFFF;
         font-size: 1.2em;
-        padding: 10px 20px;
+        padding: 0px 50px;
         display: block;
         transition: color 0.3s ease;
       }
 
       #nav a:hover {
-        color: #FDC56A;
+        color: #8554D4;
       }
 
       .introduction {
-        margin: 40px 0;
+        padding: 50px;
+        margin: 50px 0;
       }
 
       .introduction p {
@@ -88,12 +119,13 @@
         font-size: 1.5em;
         margin: 30px 0 10px;
         font-weight: bold;
+        font-family: 'Kalnia', serif;
       }
 
       .separator {
         border: none;
         border-top: 2px solid #333;
-        margin: 30px 0;
+        margin: 50px 0;
       }
 
       .hobbies, .contact-me {
@@ -130,49 +162,78 @@
         justify-content: center;
         column-gap: 50px;
         margin-top: 40px;
-        }
-     
-      
-      #header img {
-        float: right;
-        width: 50%; 
-        max-width: 150px;
-        margin: -7.6% 24.25%;
-        padding: 0;
-        border-radius: 0px;
-        vertical-align: bottom;
       }
       
       table {
         width: 100%;
         border-collapse: collapse;
         margin: 20px 0;
+        font-family: 'KoHo', sans-serif;
       }
 
       th, td {
         border: 1px solid black;
         padding: 10px;
         text-align: left;
-        background-color: #FFFFFF
+        background-color: #000000;
+        font-family: 'KoHo', sans-serif;
       }
       
       th {
-        background-color: #FDC56A;
-        color: #000
+        background-color: #000000;
+        color: #000;
+      }
+
+      .about-section {
+        position: relative;
+        background: #6a40c7;
+        color: white;
+        padding: 50px;
+        clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+        margin: 50px auto;
+        width: 80%;
+      }
+
+      .about-section p {
+        font-size: 1.2em;
+        line-height: 1.6em;
+        margin: 0 20px;
       }
       
+      .skills-section {
+        position: relative;
+        background: #6a40c7;
+        color: white;
+        padding: 50px;
+        clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+        margin: 50px auto;
+        width: 80%;
+      }
 
-
+      .skills-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      
+      .skills-container div {
+        width: 45%;
+      }
+      
+      .skills-container ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .skills-container ul li {
+        margin: 10px 0;
+      }
 
     </style>
   </head>
   <body>
     <div class="wrapper">
-      <div id="header">
-        <h1>Dolapo Ajiboye</h1>
-        <h1 class="italianno">Portfolio</h1>   
-        <img src="hand.png" alt="hand">
-        <div id="nav">
+      <div id="nav">
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="https://oyed18.github.io/Gallery-Illustrations/">Illustrations</a></li>
@@ -181,61 +242,53 @@
             <li><a href="https://oyed18.github.io/Gallery-Animations/">Animations</a></li>
           </ul>
         </div>
+      <div id="header">
+        <span class="name-vertical">Oyeolapo Ajiboye</span>
+        <h1 class="Kalnia">PORT<br>FOLIO</h1>
+        <ul class="subtitle">
+          <li>Graphic Designer</li>
+          <li>Illustrator</li>
+          <li>Animator</li>
+        </ul>
       </div>
-      
-      <div class="introduction">
-        <div class="separator"></div>
-        <h2>Hello!</h2>
+      <div class="about-section">
+        <h2 class="section-title">About Me</h2>
         <p>
           My name is Oyedolapo Ajiboye, but you can call me Dolapo. 
           I'm a second-year University of Waterloo student studying Global Business and Digital Arts (GBDA). 
           I'm passionate about illustration and graphic design, and always ready to work with others with similar interests.
           Welcome to my portfolio.
         </p>
-        <div class="separator"></div>
+      </div>
+      
+      <div class="skills-section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+          <div>
+            <h3>Technical Skills</h3>
+            <ul>
+              <li>Adobe Animate</li>
+              <li>Adobe Illustrator</li>
+              <li>Adobe InDesign</li>
+              <li>Autodesk Sketchbook</li>
+              <li>Blender</li>
+              <li>Maya</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Personal Skills</h3>
+            <ul>
+              <li>Responsibility</li>
+              <li>Creativity</li>
+              <li>Communication</li>
+              <li>Active Listener</li>
+            </ul>
+          </div>
+        </div>
       </div>
       
       <div>
-        <h2 class="section-title">Skills</h2>
-        <table>
-          <tr>
-            <th>Adobe Illustrator &amp; Animate</th>
-            <th>Blender &amp; Maya</th>
-            <th>Figma</th>
-            <th>Coding</th>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <b>Logo Project</b><br>
-                - (Casey's Panda) was made through Illustrator<br>
-                <b>Character Walk Cycle</b><br>
-                - Created through sketches in Illustrator and animated in Adobe Animate<br>
-                - Made other 2D animations using the same softwear
-              </p>
-            </td>
-            <td>
-              <p>
-                <b>3D</b><br>
-                - Worked on several personal projects using Blender<br>
-                - Made a few animations in Maya
-              </p>
-            </td>
-            <td>
-              <p>
-                <b>YAP(group app)</b><br>
-                - Designed and prototyped apps and websites
-              </p>
-            </td>
-            <td>
-              <p>
-                <b>This Website</b><br>
-                - Made using my knowledge of HTML leart in class and my free time<br>
-              </p>
-            </td>
-          </tr>
-        </table>
-        
         <h2 class="section-title">Hobbies</h2>
         <div class="hobbies">
           <div>
