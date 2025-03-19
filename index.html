@@ -33,6 +33,13 @@
         padding: 20px 0;
       }
 
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
       .Kalnia {
         font-family: 'Kalnia', serif;
         font-size: 12em;
@@ -41,11 +48,11 @@
         color: #8554D4;
         position: relative;
       }
-      
+
       .name-vertical {
         position: absolute;
-        left: 150px;
-        top: 222px;
+        left: 155px;
+        top: 202px;  
         transform: rotate(-90deg);
         transform-origin: left top;
         font-size: 1em;
@@ -54,7 +61,7 @@
         color: #FFFFFF;
         white-space: nowrap;
       }
-      
+
       .subtitle {
         font-size: 1.5em;
         font-weight: 0;
@@ -65,7 +72,7 @@
         list-style: none;
         padding: 0;
       }
-      
+
       .subtitle li {
         margin: 0 85px;
       }
@@ -163,26 +170,6 @@
         column-gap: 50px;
         margin-top: 40px;
       }
-      
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-        font-family: 'KoHo', sans-serif;
-      }
-
-      th, td {
-        border: 1px solid black;
-        padding: 10px;
-        text-align: left;
-        background-color: #000000;
-        font-family: 'KoHo', sans-serif;
-      }
-      
-      th {
-        background-color: #000000;
-        color: #000;
-      }
 
       .about-section {
         position: relative;
@@ -243,8 +230,10 @@
           </ul>
         </div>
       <div id="header">
-        <span class="name-vertical">Oyeolapo Ajiboye</span>
-        <h1 class="Kalnia">PORT<br>FOLIO</h1>
+        <div class="header-content">
+          <h1 class="Kalnia">PORT<br>FOLIO</h1>
+          <span class="name-vertical">Oyeolapo Ajiboye</span>
+        </div>
         <ul class="subtitle">
           <li>Graphic Designer</li>
           <li>Illustrator</li>
